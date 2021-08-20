@@ -1,26 +1,57 @@
+import { Input, Button, Box, Grid } from "@chakra-ui/react";
+
 const Tips = ({ updatePercent, value }) => {
   const tips = [5, 10, 15, 25, 50];
 
   return (
-    <div>
-      <h4>Selected Tip %</h4>
-      <div className="tips">
-        {tips.map((values, i) => {
+    <Box mb={6}>
+      <h4
+        style={{
+          color: "hsl(186, 14%, 43%)",
+          fontSize: "1rem",
+          fontWeight: "700",
+        }}
+      >
+        Selected Tip %
+      </h4>
+      <Grid
+        gridTemplateColumns="repeat(3,110px)"
+        gap={3}
+        fontSize="1.5rem;"
+        mt={1}
+      >
+        {tips.map((tip, index) => {
           return (
-            <button value={values} key={i} onClick={updatePercent}>
-              {values} %
-            </button>
+            <Button
+              border="none"
+              value={tip}
+              key={index}
+              onClick={updatePercent}
+              size="md"
+              borderRadius=".3125rem"
+              p="1.4rem"
+              bg="hsl(183, 100%, 15%)"
+              color="white"
+            >
+              {tip}%
+            </Button>
           );
         })}
 
-        <input
+        <Input
           onChange={updatePercent}
           value={value}
           placeholder="Custom"
-          style={{ fontSize: "20px" }}
+          textAlign="right"
+          size="md"
+          p="1.4rem"
+          bg="hsl(189, 41%, 97%)"
+          fontWeight="700"
+          fontSize="1.1rem"
+          color="hsl(183, 100%, 15%)"
         />
-      </div>
-    </div>
+      </Grid>
+    </Box>
   );
 };
 

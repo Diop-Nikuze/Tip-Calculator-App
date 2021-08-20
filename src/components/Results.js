@@ -1,3 +1,4 @@
+import { Box, Button, Flex } from "@chakra-ui/react";
 import React from "react";
 
 const Results = ({ bill, selectedPercent, people, handleReset, disabled }) => {
@@ -5,31 +6,54 @@ const Results = ({ bill, selectedPercent, people, handleReset, disabled }) => {
   const total = people > 0 ? +bill / +people + tipAmount : 0;
 
   return (
-    <div className="container__result">
-      <div className="container__amount">
-        <div style={{ display: "flex", flexDirection: "column" }}>
-          <span className="text-amount">Tip Amount</span>
-          <span className="text-person">/ person</span>
-        </div>
-        <div>
-          <h1>${tipAmount.toFixed(2)}</h1>
-        </div>
-      </div>
+    <Box px={25} py={55} margin="0 auto">
+      <Flex justifyContent="space-between" mb={25} alignItems="center">
+        <Flex flexDir="column" lineHeight="1.3" fontSize="1rem">
+          <span style={{ color: "white" }}>Tip Amount</span>
+          <span style={{ fontSize: ".8125rem", color: "hsl(184, 14%, 56%)" }}>
+            / person
+          </span>
+        </Flex>
+        <Box fontSize=" 1.90625rem">
+          <h1 style={{ color: "hsl(172, 67%, 45%)", fontSize: "2.5rem" }}>
+            ${tipAmount.toFixed(2)}
+          </h1>
+        </Box>
+      </Flex>
 
-      <div className="container__total">
-        <div style={{ display: "flex", flexDirection: "column" }}>
-          <span className="text-total">Total </span>
-          <span className="text-person">/ person</span>
-        </div>
-        <div>
-          <h1>${total.toFixed(2)}</h1>
-        </div>
-      </div>
+      <Flex justifyContent="space-between" alignItems="center" mb={135}>
+        <Flex
+          flexDir="column"
+          lineHeight="1.3"
+          fontSize="1rem"
+          fontWeight="700"
+        >
+          <span style={{ color: "white" }}>Total </span>
+          <span style={{ fontSize: ".8125rem", color: "hsl(184, 14%, 56%)" }}>
+            / person
+          </span>
+        </Flex>
+        <Box fontSize=" 1.90625rem">
+          <h1 style={{ color: "hsl(172, 67%, 45%)", fontSize: "2.5rem" }}>
+            ${total.toFixed(2)}
+          </h1>
+        </Box>
+      </Flex>
 
-      <button onClick={handleReset} disabled={disabled} className="btn-reset">
+      <Button
+        onClick={handleReset}
+        disabled={disabled}
+        w="100%"
+        fsize="1.25rem"
+        textTransform="uppercase"
+        fontWeight="700"
+        padding=" 0.85rem 0.85rem 0.7625rem 0"
+        borderRadius=".3125rem"
+        className="btn-reset"
+      >
         Reset
-      </button>
-    </div>
+      </Button>
+    </Box>
   );
 };
 

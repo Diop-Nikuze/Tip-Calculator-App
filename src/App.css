@@ -1,4 +1,8 @@
-.container-calculator {
+body {
+  background-color: red;
+}
+
+/* .container-calculator {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -62,25 +66,9 @@ h1 {
   transition: hover 0.5s ease-in-out;
 }
 
-.btn-reset:hover:enabled {
-  background-color: #fff;
-}
+.
 
-.btn-reset:enabled {
-  background-color: hsl(172, 67%, 45%);
-}
 
-.btn-reset:disabled {
-  background-color: hsl(172, 67%, 45%);
-  color: rgb(110, 102, 102);
-  cursor: not-allowed;
-}
-
-h4 {
-  margin-bottom: 10px;
-  margin-top: 40px;
-  color: hsl(186, 14%, 43%);
-}
 
 input {
   background-color: hsl(189, 41%, 97%);
@@ -91,6 +79,7 @@ input {
   text-align: right;
   padding: 0.25rem 0.8rem 0.3125rem;
   border-radius: 0.3125rem;
+  font-family: "Space Mono", monospace;
 }
 
 .tips button {
@@ -102,4 +91,36 @@ input {
   text-align: center;
   border: none;
   border-radius: 0.3125rem;
+  cursor: pointer;
+  font-family: "Space Mono", monospace;
+}
+
+.inputBill,
+.inputPeople {
+  position: relative;
+}
+
+.icon-dollar {
+  position: absolute;
+  top: 8.5rem;
+  left: 4rem;
+  z-index: 1;
+}
+
+.icon-person {
+  position: absolute;
+  top: 27.2rem;
+  left: 4rem;
+  z-index: 1;
+} */
+
+.btn-reset:enabled {
+  background: hsl(172, 67%, 45%);
+}
+
+.btn-reset:disabled {
+  background-color: hsl(172, 67%, 45%);
+  color: rgb(150, 146, 146);
+  cursor: not-allowed;
+  opacity: 0.3;
 }
