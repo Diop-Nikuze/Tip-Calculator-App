@@ -1,6 +1,6 @@
 # Frontend Mentor - Tip calculator app
 
-![Design preview for the Tip calculator app coding challenge](./src/design/desktop-desing-empty.jpg)
+![Design preview for the Tip calculator app coding challenge](./src/design/desktop-design-empty.jpg)
 
 ## The challenge
 
