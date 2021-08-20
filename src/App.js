@@ -8,6 +8,7 @@ import { ChakraProvider, Box, Flex, Image } from "@chakra-ui/react";
 import logo from "./images/logo.svg";
 import theme from "./theme/theme";
 import "@fontsource/space-mono/700.css";
+import Footer from "./components/Footer";
 
 function App() {
   const [bill, setBill] = useState("");
@@ -88,6 +89,8 @@ function App() {
           />
         </Box>
       </Flex>
+
+      <Footer />
     </ChakraProvider>
   );
 }
