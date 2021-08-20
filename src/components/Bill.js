@@ -32,6 +32,8 @@ const Bill = ({ handleBill, value }) => {
           bg="hsl(189, 41%, 97%)"
           color="hsl(183, 100%, 15%)"
           fontWeight="700"
+          _hover={{ border: "2px solid  hsl(172, 67%, 45%)" }}
+          _focus={{ border: "2px solid  hsl(172, 67%, 45%)" }}
         />
       </InputGroup>
     </Box>

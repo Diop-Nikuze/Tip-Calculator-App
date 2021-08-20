@@ -7,7 +7,12 @@ const Results = ({ bill, selectedPercent, people, handleReset, disabled }) => {
 
   return (
     <Box px={25} py={55} margin="0 auto">
-      <Flex justifyContent="space-between" mb={25} alignItems="center">
+      <Flex
+        justifyContent="space-between"
+        mb={25}
+        alignItems="center"
+        fontWeight="700"
+      >
         <Flex flexDir="column" lineHeight="1.3" fontSize="1rem">
           <span style={{ color: "white" }}>Tip Amount</span>
           <span style={{ fontSize: ".8125rem", color: "hsl(184, 14%, 56%)" }}>
@@ -21,13 +26,13 @@ const Results = ({ bill, selectedPercent, people, handleReset, disabled }) => {
         </Box>
       </Flex>
 
-      <Flex justifyContent="space-between" alignItems="center" mb={135}>
-        <Flex
-          flexDir="column"
-          lineHeight="1.3"
-          fontSize="1rem"
-          fontWeight="700"
-        >
+      <Flex
+        justifyContent="space-between"
+        alignItems="center"
+        mb={135}
+        fontWeight="700"
+      >
+        <Flex flexDir="column" lineHeight="1.3" fontSize="1rem">
           <span style={{ color: "white" }}>Total </span>
           <span style={{ fontSize: ".8125rem", color: "hsl(184, 14%, 56%)" }}>
             / person
@@ -50,6 +55,7 @@ const Results = ({ bill, selectedPercent, people, handleReset, disabled }) => {
         padding=" 0.85rem 0.85rem 0.7625rem 0"
         borderRadius=".3125rem"
         className="btn-reset"
+        _hover={{ bg: " hsl(185, 41%, 84%)" }}
       >
         Reset
       </Button>

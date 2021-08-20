@@ -15,4 +15,4 @@ Your users should be able to:
 ## Built With
 
 - ReactJS
-- CSS ( CSS GRID - FLEX-BOX)
+- Chakra UI

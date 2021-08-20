@@ -32,6 +32,11 @@ const Tips = ({ updatePercent, value }) => {
               p="1.4rem"
               bg="hsl(183, 100%, 15%)"
               color="white"
+              outline="none"
+              _hover={{
+                bgColor: "hsl(185, 41%, 84%)",
+                color: "hsl(172, 67%, 45%)",
+              }}
             >
               {tip}%
             </Button>
@@ -49,6 +54,9 @@ const Tips = ({ updatePercent, value }) => {
           fontWeight="700"
           fontSize="1.1rem"
           color="hsl(183, 100%, 15%)"
+          cursor="pointer"
+          _hover={{ border: "1px solid  hsl(172, 67%, 45%)" }}
+          _focus={{ border: "1px solid  hsl(172, 67%, 45%)" }}
         />
       </Grid>
     </Box>

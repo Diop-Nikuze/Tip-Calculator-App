@@ -4,7 +4,8 @@ import People from "./components/People";
 import Results from "./components/Results";
 import Tips from "./components/Tips";
 import "./App.css";
-import { ChakraProvider, Box, Flex } from "@chakra-ui/react";
+import { ChakraProvider, Box, Flex, Image } from "@chakra-ui/react";
+import logo from "./images/logo.svg";
 import theme from "./theme/theme";
 import "@fontsource/space-mono/700.css";
 
@@ -50,12 +51,10 @@ function App() {
   };
 
   return (
-    <ChakraProvider theme={theme}>
-      <h1>Hello</h1>
-      <h1>Hello</h1>
-      <h1>Hello</h1>
-      <h1>Hello</h1>
-      <h1>Hello</h1>
+    <ChakraProvider theme={theme} bgColor="red">
+      <Flex justifyContent="center" my={50}>
+        <Image src={logo}></Image>
+      </Flex>
 
       <Flex
         alignItems="center"
