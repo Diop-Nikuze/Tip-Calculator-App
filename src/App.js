@@ -59,12 +59,15 @@ function App() {
 
       <Flex
         alignItems="center"
-        h="70vh"
         justifyContent="space-between"
+        flexDir={{ base: "column", sm: "column", md: "column", lg: "row" }}
         maxWidth="90%"
         w={950}
         margin="0 auto"
-        px="50px"
+        px={{ base: "35px", sm: "35px", md: "35px", lg: "50px" }}
+        py="20px"
+        bgColor="white"
+        borderRadius="1.5625rem"
       >
         <Box>
           <Bill handleBill={handleBill} value={bill} />
@@ -77,7 +80,7 @@ function App() {
         <Box
           bgColor="hsl(183, 100%, 15%)"
           borderRadius=" 0.9375rem"
-          w={450}
+          w={{ base: "100%", sm: "100%", md: "100%", lg: 450 }}
           fontWeight="700"
         >
           <Results

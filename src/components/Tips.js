@@ -15,7 +15,12 @@ const Tips = ({ updatePercent, value }) => {
         Selected Tip %
       </h4>
       <Grid
-        gridTemplateColumns="repeat(3,110px)"
+        gridTemplateColumns={{
+          base: "repeat(2,1fr)",
+          sm: "repeat(2,1fr)",
+          md: "repeat(3,1fr)",
+          lg: "repeat(3,110px)",
+        }}
         gap={3}
         fontSize="1.5rem;"
         mt={1}
@@ -46,7 +51,7 @@ const Tips = ({ updatePercent, value }) => {
         <Input
           onChange={updatePercent}
           value={value}
-          placeholder="Custom"
+          placeholder="Custom %"
           textAlign="right"
           size="md"
           p="1.4rem"

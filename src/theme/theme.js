@@ -1,8 +1,13 @@
 import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
-  fonts: {
-    body: "Space Mono",
+  styles: {
+    global: {
+      "html, body": {
+        fontFamily: "Space Mono",
+        backgroundColor: "#c5e4e7",
+      },
+    },
   },
 });
 

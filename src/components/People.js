@@ -30,6 +30,7 @@ const People = ({ handlePeople, value }) => {
           _hover={{ border: "2px solid  hsl(172, 67%, 45%)" }}
           _focus={{ border: "2px solid  hsl(172, 67%, 45%)" }}
           cursor="pointer"
+          mb={{ base: 7, sm: 7 }}
         />
       </InputGroup>
     </div>
