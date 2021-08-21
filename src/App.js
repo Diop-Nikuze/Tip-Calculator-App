@@ -63,7 +63,7 @@ function App() {
         flexDir={{ base: "column", sm: "column", md: "column", lg: "row" }}
         maxWidth="90%"
         w={950}
-        margin="0 auto"
+        m="0 auto"
         px={{ base: "35px", sm: "35px", md: "35px", lg: "50px" }}
         py="20px"
         bgColor="white"

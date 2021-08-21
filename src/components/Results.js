@@ -6,7 +6,7 @@ const Results = ({ bill, selectedPercent, people, handleReset, disabled }) => {
   const total = people > 0 ? +bill / +people + tipAmount : 0;
 
   return (
-    <Box px={25} py={{ base: 30, sm: 30, md: 55, lg: 55 }} margin="0 auto">
+    <Box px={25} py={{ base: 30, sm: 30, md: 55, lg: 55 }} m="0 auto">
       <Flex
         justifyContent="space-between"
         mb={25}
@@ -65,7 +65,7 @@ const Results = ({ bill, selectedPercent, people, handleReset, disabled }) => {
         onClick={handleReset}
         disabled={disabled}
         w="100%"
-        fsize="1.25rem"
+        fontSize="1.25rem"
         textTransform="uppercase"
         fontWeight="700"
         padding=" 0.85rem 0.85rem 0.7625rem 0"

@@ -10,6 +10,11 @@ Your users should be able to:
 - See hover states for all interactive elements on the page
 - Calculate the correct tip and total cost of the bill per person
 
+## Built With
+
+- ReactJS
+- Chakra UI
+
 ## What Did I learn from this Challenge ?
 
 A plus symbol before variable : +variableName
@@ -33,8 +38,3 @@ The table below explains it clearly :
 | 'infinity' |    NaN    |
 
 - Learn More [https://stackoverflow.com/questions/6682997/what-is-the-purpose-of-a-plus-symbol-before-a-variable]
-
-## Built With
-
-- ReactJS
-- Chakra UI
