@@ -2,6 +2,8 @@
 
 ![Design preview for the Tip calculator app coding challenge](./src/design/desktop-design-empty.jpg)
 
+Challenge by : https://www.frontendmentor.io?ref=challenge
+
 ## The challenge
 
 Your users should be able to:
