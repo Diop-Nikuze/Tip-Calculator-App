@@ -1,7 +1,8 @@
 {
   "name": "streamingtest",
+  "homepage": "https://tip-calculator-app-amber.vercel.app/",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@chakra-ui/react": "^1.6.6",
     "@emotion/react": "^11",
