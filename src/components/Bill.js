@@ -28,10 +28,10 @@ const Bill = ({ handleBill, value }) => {
           placeholder="0"
           textAlign="right"
           fontSize=" 1.31875rem"
+          fontWeight={{ base: "500", sm: "500", md: "700", lg: "700" }}
           h="45px"
           bg="hsl(189, 41%, 97%)"
           color="hsl(183, 100%, 15%)"
-          fontWeight="700"
           _hover={{ border: "2px solid  hsl(172, 67%, 45%)" }}
           _focus={{ border: "2px solid  hsl(172, 67%, 45%)" }}
         />

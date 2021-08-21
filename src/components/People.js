@@ -26,7 +26,7 @@ const People = ({ handlePeople, value }) => {
           h="45px"
           bg="hsl(189, 41%, 97%)"
           color="hsl(183, 100%, 15%)"
-          fontWeight="700"
+          fontWeight={{ base: "500", sm: "500", md: "700", lg: "700" }}
           _hover={{ border: "2px solid  hsl(172, 67%, 45%)" }}
           _focus={{ border: "2px solid  hsl(172, 67%, 45%)" }}
           cursor="pointer"
