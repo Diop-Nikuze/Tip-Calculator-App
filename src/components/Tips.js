@@ -25,12 +25,12 @@ const Tips = ({ updatePercent, value }) => {
         fontSize="1.5rem;"
         mt={1}
       >
-        {tips.map((tip, index) => {
+        {tips.map((tip, i) => {
           return (
             <Button
               border="none"
               value={tip}
-              key={index}
+              key={i}
               onClick={updatePercent}
               size="md"
               borderRadius=".3125rem"
