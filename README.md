@@ -19,7 +19,7 @@ Your users should be able to:
 
 ## What Did I learn from this Challenge ?
 
-A plus symbol before variable : +variableName
+A plus symbol before a variable : +variableName
 
 What does + mean in JavaScript ? :
 
@@ -39,4 +39,4 @@ The table below explains it clearly :
 | 'Infinity' | Infinity  |
 | 'infinity' |    NaN    |
 
-- Learn More : https://stackoverflow.com/questions/6682997/what-is-the-purpose-of-a-plus-symbol-before-a-variable
+Learn More : https://stackoverflow.com/questions/6682997/what-is-the-purpose-of-a-plus-symbol-before-a-variable
