@@ -51,7 +51,7 @@ const Tips = ({ updatePercent, value }) => {
         <Input
           onChange={updatePercent}
           value={value}
-          placeholder="Custom %"
+          placeholder="Custom%"
           textAlign="right"
           size="md"
           p="1.4rem"
