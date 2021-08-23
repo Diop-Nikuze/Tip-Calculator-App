@@ -15,12 +15,13 @@ const Bill = ({ handleBill, value }) => {
           color: "hsl(186, 14%, 43%)",
           fontSize: "1rem",
           fontWeight: "700",
+          marginBottom: "5px",
         }}
       >
         Bill
       </h4>
 
-      <InputGroup mt={1}>
+      <InputGroup>
         <InputLeftElement children={<Image src={iconDollar}></Image>} />
         <Input
           onChange={handleBill}

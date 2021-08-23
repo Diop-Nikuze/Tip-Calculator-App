@@ -10,6 +10,7 @@ const Tips = ({ updatePercent, value }) => {
           color: "hsl(186, 14%, 43%)",
           fontSize: "1rem",
           fontWeight: "700",
+          marginBottom: "5px",
         }}
       >
         Selected Tip %
@@ -22,8 +23,6 @@ const Tips = ({ updatePercent, value }) => {
           lg: "repeat(3,110px)",
         }}
         gap={3}
-        fontSize="1.5rem;"
-        mt={1}
       >
         {tips.map((tip, i) => {
           return (
@@ -32,9 +31,8 @@ const Tips = ({ updatePercent, value }) => {
               value={tip}
               key={i}
               onClick={updatePercent}
-              size="md"
+              size="lg"
               borderRadius=".3125rem"
-              p="1.4rem"
               bg="hsl(183, 100%, 15%)"
               color="white"
               outline="none"
@@ -52,12 +50,16 @@ const Tips = ({ updatePercent, value }) => {
           onChange={updatePercent}
           value={value}
           placeholder="Custom%"
-          textAlign="right"
-          size="md"
-          p="1.4rem"
+          textAlign={{ base: "left", sm: "left", md: "right", lg: "right" }}
+          size="lg"
           bg="hsl(189, 41%, 97%)"
           fontWeight="700"
-          fontSize="1.1rem"
+          fontSize={{
+            base: "0.9rem",
+            sm: "0.9rem",
+            md: "1.1rem",
+            lg: "1.1rem",
+          }}
           color="hsl(183, 100%, 15%)"
           cursor="pointer"
           _hover={{ border: "1px solid  hsl(172, 67%, 45%)" }}

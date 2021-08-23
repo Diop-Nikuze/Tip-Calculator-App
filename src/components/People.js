@@ -10,12 +10,13 @@ const People = ({ handlePeople, value }) => {
           color: "hsl(186, 14%, 43%)",
           fontSize: "1rem",
           fontWeight: "700",
+          marginBottom: "5px",
         }}
       >
         Number of People
       </h4>
 
-      <InputGroup mt={1}>
+      <InputGroup>
         <InputLeftElement children={<Image src={iconPerson}></Image>} />
         <Input
           onChange={handlePeople}
