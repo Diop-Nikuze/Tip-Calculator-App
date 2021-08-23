@@ -54,7 +54,7 @@ function App() {
   return (
     <ChakraProvider theme={theme} bgColor="red">
       <Flex justifyContent="center" my={50}>
-        <Image src={logo}></Image>
+        <Image src={logo} alt="logo"></Image>
       </Flex>
 
       <Flex

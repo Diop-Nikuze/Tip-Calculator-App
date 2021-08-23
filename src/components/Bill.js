@@ -22,7 +22,9 @@ const Bill = ({ handleBill, value }) => {
       </h4>
 
       <InputGroup>
-        <InputLeftElement children={<Image src={iconDollar}></Image>} />
+        <InputLeftElement
+          children={<Image src={iconDollar} alt="iconDollar"></Image>}
+        />
         <Input
           onChange={handleBill}
           value={value}

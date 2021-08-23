@@ -17,7 +17,9 @@ const People = ({ handlePeople, value }) => {
       </h4>
 
       <InputGroup>
-        <InputLeftElement children={<Image src={iconPerson}></Image>} />
+        <InputLeftElement
+          children={<Image src={iconPerson} alt="iconUser"></Image>}
+        />
         <Input
           onChange={handlePeople}
           value={value}

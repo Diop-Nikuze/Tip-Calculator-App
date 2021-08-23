@@ -1,5 +1,4 @@
 import { Box, Button, Flex } from "@chakra-ui/react";
-import React from "react";
 
 const Results = ({ bill, selectedPercent, people, handleReset, disabled }) => {
   const tipAmount = people > 0 ? (+bill * +selectedPercent) / 100 / +people : 0;
