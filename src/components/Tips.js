@@ -23,6 +23,7 @@ const Tips = ({ updatePercent, value }) => {
           lg: "repeat(3,110px)",
         }}
         gap={3}
+        alignItems="center"
       >
         {tips.map((tip, i) => {
           return (
@@ -55,7 +56,7 @@ const Tips = ({ updatePercent, value }) => {
           bg="hsl(189, 41%, 97%)"
           fontWeight="700"
           fontSize={{
-            base: "0.7rem",
+            base: "0.8rem",
             sm: "0.8rem",
             md: "1.1rem",
             lg: "1.1rem",
