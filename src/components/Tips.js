@@ -56,7 +56,7 @@ const Tips = ({ updatePercent, value }) => {
           fontWeight="700"
           fontSize={{
             base: "0.7rem",
-            sm: "0.7rem",
+            sm: "0.8rem",
             md: "1.1rem",
             lg: "1.1rem",
           }}
